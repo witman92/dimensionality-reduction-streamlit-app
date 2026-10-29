@@ -35,7 +35,7 @@ st.set_page_config(
 @st.cache_data(show_spinner="Cargando datos...")
 def load_data(file=None):
     """Carga el archivo Excel desde una URL de GitHub o un archivo local."""
-    GITHUB_XLSX_URL = "https://github.com/witman92/Examen_-Reducci-n-de-Dimensionalidad-y-Aplicaci-n-Interactiva-con-Streamlit/raw/274830aaee4edd806be40a74601f4a8218a102b7/Abulon.xlsx"
+    GITHUB_XLSX_URL = "https://github.com/witman92/dimensionality-reduction-streamlit-app/raw/274830aaee4edd806be40a74601f4a8218a102b7/Abulon.xlsx"
     try:
         if file:
             df = pd.read_excel(file)
